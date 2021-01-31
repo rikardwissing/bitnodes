@@ -1,22 +1,22 @@
 #!/bin/bash
-# --- bitcoin mainnet: f9beb4d9 (db = 0) ---
-/usr/bin/nice -n 19 python -u crawl.py conf/crawl.f9beb4d9.conf master > log/crawl.f9beb4d9.master.out 2>&1 &
-/usr/bin/nice -n 19 python -u crawl.py conf/crawl.f9beb4d9.conf slave > log/crawl.f9beb4d9.slave.1.out 2>&1 &
-/usr/bin/nice -n 19 python -u crawl.py conf/crawl.f9beb4d9.conf slave > log/crawl.f9beb4d9.slave.2.out 2>&1 &
+# --- myriad mainnet: af4576ee (db = 0) ---
+/usr/bin/nice -n 19 python -u crawl.py conf/crawl.af4576ee.conf master > log/crawl.af4576ee.master.out 2>&1 &
+/usr/bin/nice -n 19 python -u crawl.py conf/crawl.af4576ee.conf slave > log/crawl.af4576ee.slave.1.out 2>&1 &
+/usr/bin/nice -n 19 python -u crawl.py conf/crawl.af4576ee.conf slave > log/crawl.af4576ee.slave.2.out 2>&1 &
 
-/usr/bin/nice -n 19 python -u ping.py conf/ping.f9beb4d9.conf master > log/ping.f9beb4d9.master.out 2>&1 &
-/usr/bin/nice -n 19 python -u ping.py conf/ping.f9beb4d9.conf slave > log/ping.f9beb4d9.slave.1.out 2>&1 &
-/usr/bin/nice -n 19 python -u ping.py conf/ping.f9beb4d9.conf slave > log/ping.f9beb4d9.slave.2.out 2>&1 &
-/usr/bin/nice -n 19 python -u ping.py conf/ping.f9beb4d9.conf slave > log/ping.f9beb4d9.slave.3.out 2>&1 &
-/usr/bin/nice -n 19 python -u ping.py conf/ping.f9beb4d9.conf slave > log/ping.f9beb4d9.slave.4.out 2>&1 &
-/usr/bin/nice -n 19 python -u ping.py conf/ping.f9beb4d9.conf slave > log/ping.f9beb4d9.slave.5.out 2>&1 &
+/usr/bin/nice -n 19 python -u ping.py conf/ping.af4576ee.conf master > log/ping.af4576ee.master.out 2>&1 &
+/usr/bin/nice -n 19 python -u ping.py conf/ping.af4576ee.conf slave > log/ping.af4576ee.slave.1.out 2>&1 &
+/usr/bin/nice -n 19 python -u ping.py conf/ping.af4576ee.conf slave > log/ping.af4576ee.slave.2.out 2>&1 &
+/usr/bin/nice -n 19 python -u ping.py conf/ping.af4576ee.conf slave > log/ping.af4576ee.slave.3.out 2>&1 &
+/usr/bin/nice -n 19 python -u ping.py conf/ping.af4576ee.conf slave > log/ping.af4576ee.slave.4.out 2>&1 &
+/usr/bin/nice -n 19 python -u ping.py conf/ping.af4576ee.conf slave > log/ping.af4576ee.slave.5.out 2>&1 &
 
-/usr/bin/nice -n 19 python -u resolve.py conf/resolve.f9beb4d9.conf > log/resolve.f9beb4d9.out 2>&1 &
+/usr/bin/nice -n 19 python -u resolve.py conf/resolve.af4576ee.conf > log/resolve.af4576ee.out 2>&1 &
 
-/usr/bin/nice -n 19 python -u export.py conf/export.f9beb4d9.conf > log/export.f9beb4d9.out 2>&1 &
+/usr/bin/nice -n 19 python -u export.py conf/export.af4576ee.conf > log/export.af4576ee.out 2>&1 &
 
-/usr/bin/nice -n 19 python -u seeder.py conf/seeder.f9beb4d9.conf > log/seeder.f9beb4d9.out 2>&1 &
+/usr/bin/nice -n 19 python -u seeder.py conf/seeder.af4576ee.conf > log/seeder.af4576ee.out 2>&1 &
 
-/usr/bin/nice -n 19 python -u pcap.py conf/pcap.f9beb4d9.conf > log/pcap.f9beb4d9.1.out 2>&1 &
-/usr/bin/nice -n 19 python -u pcap.py conf/pcap.f9beb4d9.conf > log/pcap.f9beb4d9.2.out 2>&1 &
-/usr/bin/nice -n 19 python -u pcap.py conf/pcap.f9beb4d9.conf > log/pcap.f9beb4d9.3.out 2>&1 &
+/usr/bin/nice -n 19 python -u pcap.py conf/pcap.af4576ee.conf > log/pcap.af4576ee.1.out 2>&1 &
+/usr/bin/nice -n 19 python -u pcap.py conf/pcap.af4576ee.conf > log/pcap.af4576ee.2.out 2>&1 &
+/usr/bin/nice -n 19 python -u pcap.py conf/pcap.af4576ee.conf > log/pcap.af4576ee.3.out 2>&1 &
