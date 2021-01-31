@@ -89,6 +89,10 @@ def export_nodes(nodes, timestamp):
     open(dump, 'w').write(json.dumps(rows, encoding="latin-1"))
     logging.info("Wrote %s", dump)
 
+    dump = os.path.join(CONF['export_dir'], "{}.json".format("latest"))
+    open(dump, 'w').write(json.dumps(rows, encoding="latin-1"))
+    logging.info("Wrote %s", dump)
+
 
 def init_conf(argv):
     """
