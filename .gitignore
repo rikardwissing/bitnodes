@@ -2,6 +2,7 @@
 *.log
 *.out
 *.pyc
+!*.af4576ee.conf
 .DS_Store
 /.idea/
 /.pytest_cache/
